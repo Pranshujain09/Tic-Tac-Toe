@@ -1,0 +1,119 @@
+body{
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .Game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .board {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 250px;
+    height: 250px;
+    margin: 40px 0;
+  }
+
+  .cell {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+
+  .winner-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  button {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    background-color: #3e8e41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .Game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .input-group {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .input-group label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .input-group input {
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+  }
+
+  .board {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .cell {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    cursor: pointer;
+  }
+
+  .winner-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  button {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #3e8e41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+}

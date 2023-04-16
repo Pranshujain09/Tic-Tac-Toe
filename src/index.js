@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import Game from "./Game";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const mystyle = {
+  color: "white",
+  backgroundColor: "DodgerBlue",
+  padding: "10px",
+  fontFamily: "Arial",
+  textAlign: "center",
+  top: "50px",
+  postion: "absolute",
+  margin: "0",
+};
+
+const ele = (
+  <div style={{margin:"0"}}>
+    <h1 style={mystyle}>Tic - Tac - Toe</h1>
+    <Game />
+    <p style={{ width: "100%", textAlign: "center", color: "grey" , position:"absolute", top:"700px"}}>
+      Made By Pranshu❤️
+    </p>
+  </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+let root = document.getElementById("root");
+ReactDOM.render(ele, root);
